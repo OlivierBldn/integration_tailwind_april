@@ -8,40 +8,64 @@
 </head>
 <body class="font-jakarta leading-normal tracking-normal w-full">
 
-  <!-- Header -->
-  <header class="relative">
-    <nav class="hidden bg-grey absolute right-56 top-24 container mx-auto lg:flex justify-center items-center px-4 py-1 rounded-full max-w-screen-lg">
-      <!-- Navigation -->
-      <div class="hidden md:flex space-x-12 text-2xl">
-        <a href="#" class="hover:underline px-2 py-1">Home</a>
-        <a href="#" class="hover:underline px-2 py-1">Features</a>
-        <a href="#" class="hover:underline px-2 py-1">Team</a>
-        <a href="#" class="hover:underline px-2 py-1">About</a>
-        <a href="#" class="hover:underline px-2 py-1">Testimonials</a>
-        <a href="#" class="hover:underline px-2 py-1">Help</a>
-        <a href="#" class="hover:underline px-2 py-1">Contact</a>
-      </div>
-      <!-- Mobile Menu Button -->
-      <div class="hidden md:hidden">
-        <button class="text-black focus:outline-none">
-          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-          </svg>
-        </button>
-      </div>
-    </nav>
+<!-- Header -->
+<header class="z-50 w-full px-44">
+	<nav class="container mx-auto flex justify-between items-center px-4 py-2">
+	  <!-- Logo for all sizes -->
+	  <a href="#" class="logo text-4xl font-bold inline-block">LearnM5</a>
+  
+	  <!-- Desktop Navigation Links -->
+	  <div class="hidden lg:flex space-x-8 px-8 bg-grey text-black text-2xl rounded-full">
+		<a href="#" class="hover:text-blue-500 px-3 py-2">Home</a>
+		<a href="#" class="hover:text-blue-500 px-3 py-2">Features</a>
+		<a href="#" class="hover:text-blue-500 px-3 py-2">Team</a>
+		<a href="#" class="hover:text-blue-500 px-3 py-2">About</a>
+		<a href="#" class="hover:text-blue-500 px-3 py-2">Testimonials</a>
+		<a href="#" class="hover:text-blue-500 px-3 py-2">Help</a>
+		<a href="#" class="hover:text-blue-500 px-3 py-2">Contact</a>
+	  </div>
+  
+	  <!-- Mobile Menu Button -->
+	  <button class="burger-button lg:hidden text-black focus:outline-none">
+		<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+		  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+		</svg>
+	  </button>
+  
+	  <!-- Mobile Navigation Menu -->
+	  <div class="cross-icon absolute top-0 bg-white hidden lg:hidden">
+		<!-- Cross Icon for closing the menu -->
+		<div class="absolute top-5 right-5 z-10">
+		  <button class="text-black focus:outline-none">
+			<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+			  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6l12 12m0-12L6 18" />
+			</svg>
+		  </button>
+		</div>
+		<!-- Mobile Navigation Links -->
+		<div class="flex flex-col items-center justify-center min-h-screen absolute bg-white w-screen">
+		  <a href="#" class="hover:text-blue-500 text-lg px-3 py-2">Home</a>
+		  <a href="#" class="hover:text-blue-500 text-lg px-3 py-2">Features</a>
+		  <a href="#" class="hover:text-blue-500 text-lg px-3 py-2">Team</a>
+		  <a href="#" class="hover:text-blue-500 text-lg px-3 py-2">About</a>
+		  <a href="#" class="hover:text-blue-500 text-lg px-3 py-2">Testimonials</a>
+		  <a href="#" class="hover:text-blue-500 text-lg px-3 py-2">Help</a>
+		  <a href="#" class="hover:text-blue-500 text-lg px-3 py-2">Contact</a>
+		</div>
+	  </div>
+	</nav>
   </header>
+  
   
   <!-- Main Content -->
 <main>
 	<!-- Hero section -->
-	<section class="mb-8 bg-purple px-36 py-16">
-		<div class="lg:flex bg-white rounded-3xl">
+	<section class="mb-8 bg-purple px-4 xl:px-36 py-16">
+		<div class="md:flex bg-white rounded-3xl">
 			<div class="lg:w-1/2 p-10">
-				<h1 class="sm:text-lg xl:text-4xl font-bold text-purple-600 inline-block">LearnM5</h1>
-				<h2 class="sm:text-lg xl:text-7xl font-bold mx-6 my-8 lg:pr-32">Online Spanish Courses</h2>
-				<p class="mx-6 my-3 text-xl xl:pr-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis dolor eget imperdiet velit.</p>
-				<p class="mx-6 my-3 text-xl xl:pr-32">Maecenas lobortis ligula sapien, sed elementum tellus tristique eu. Mauris posuere dolor ut urna pharetra, id efficitur mi semper.</p>
+				<h1 class="sm:text-lg lg:text-4xl xl:text-7xl font-bold mx-6 xl:my-8 xl:pr-32">Online Spanish Courses</h2>
+				<p class="mx-6 my-3 text-md lg:text-lg xl:pr-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis dolor eget imperdiet velit.</p>
+				<p class="mx-6 my-3 text-md lg:text-lg xl:pr-32">Maecenas lobortis ligula sapien, sed elementum tellus tristique eu. Mauris posuere dolor ut urna pharetra, id efficitur mi semper.</p>
 				<a href="#" class="bg-purple inline-block rounded-xl text-white text-xl font-semibold py-4 px-10 hover:bg-gray-100 transition duration-300 mx-6">Get Started</a>
 			</div>
 			<div class="lg:w-1/2">
@@ -51,83 +75,83 @@
 	</section>
 	
 	<!-- Features section -->
-	<section class="px-36 py-16">
-		<h2 class="text-7xl font-bold text-center mb-10">Our Features</h2>
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+	<section id="features" class="py-16">
+		<h2 class="text-4xl xl:text-7xl font-bold text-center mb-10">Our Features</h2>
+		<div class="features-container">
 		<!-- Feature 1 -->
-		<div class="border border-black overflow-hidden max-w-96">
-			<div class="px-8 py-10">
-				<h3 class="text-xl rounded-full bg-mint w-10 h-10 flex items-center justify-center">1</h3>
-				<p class="text-3xl font-bold py-4 leading-10">Modern teaching methods</p>
-				<p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum ut ante sed cursus. Nunc auctor pharetra ex rhoncus.</p>
+		<div class="feature">
+			<div class="feature-description">
+				<h3 class="feature-number">1</h3>
+				<p class="feature-title">Modern teaching methods</p>
+				<p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum ut ante sed cursus. Nunc auctor pharetra ex rhoncus.</p>
 			</div>
-			<div class="mt-4 w-96 h-64">
-				<img class="w-full h-full object-cover" src="./assets/img/2.jpg" alt="Feature 1">
+			<div class="feature-img-container">
+				<img class="feature-img" src="./assets/img/2.jpg" alt="Feature 1">
 			</div>
 		</div>
 		<!-- Feature 2 -->
-		<div class="border border-black overflow-hidden max-w-96">
-			<div class="px-8 py-10">
-				<h3 class="text-xl rounded-full bg-mint w-10 h-10 flex items-center justify-center">2</h3>
-				<p class="text-3xl font-bold py-4 leading-10">Modern teaching methods</p>
-				<p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum ut ante sed cursus. Nunc auctor pharetra ex rhoncus.</p>
+		<div class="feature">
+			<div class="feature-description">
+				<h3 class="feature-number">2</h3>
+				<p class="feature-title">Modern teaching methods</p>
+				<p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum ut ante sed cursus. Nunc auctor pharetra ex rhoncus.</p>
 			</div>
-			<div class="mt-4 w-96 h-64">
-				<img class="w-full h-full object-cover" src="./assets/img/3.jpg" alt="Feature 2">
+			<div class="feature-img-container">
+				<img class="feature-img" src="./assets/img/3.jpg" alt="Feature 2">
 			</div>
 		</div>
 		<!-- Feature 3 -->
-		<div class="border border-black overflow-hidden max-w-96">
-			<div class="px-8 py-10">
-				<h3 class="text-xl rounded-full bg-mint w-10 h-10 flex items-center justify-center">3</h3>
-				<p class="text-3xl font-bold py-4 leading-10">Modern teaching methods</p>
-				<p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum ut ante sed cursus. Nunc auctor pharetra ex rhoncus.</p>
+		<div class="feature">
+			<div class="feature-description">
+				<h3 class="feature-number">3</h3>
+				<p class="feature-title">Modern teaching methods</p>
+				<p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum ut ante sed cursus. Nunc auctor pharetra ex rhoncus.</p>
 			</div>
-			<div class="mt-4 w-96 h-64">
-				<img class="w-full h-full object-cover"  src="./assets/img/4.jpg" alt="Feature 3">
+			<div class="feature-img-container">
+				<img class="feature-img"  src="./assets/img/4.jpg" alt="Feature 3">
 			</div>
 		</div>
 		<!-- Feature 4 -->
-		<div class="border border-black overflow-hidden max-w-96">
-			<div class="px-8 py-10">
-				<h3 class="text-xl rounded-full bg-mint w-10 h-10 flex items-center justify-center">4</h3>
-				<p class="text-3xl font-bold py-4 leading-10">Modern teaching methods</p>
-				<p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum ut ante sed cursus. Nunc auctor pharetra ex rhoncus.</p>
+		<div class="feature">
+			<div class="feature-description">
+				<h3 class="feature-number">4</h3>
+				<p class="feature-title">Modern teaching methods</p>
+				<p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam fermentum ut ante sed cursus. Nunc auctor pharetra ex rhoncus.</p>
 			</div>
-			<div class="mt-4 w-96 h-64">
-				<img class="w-full h-full object-cover"  src="./assets/img/5.jpg" alt="Feature 4">
+			<div class="feature-img-container">
+				<img class="feature-img"  src="./assets/img/5.jpg" alt="Feature 4">
 			</div>
 		</div>
 		</div>
 	</section>
 	
 	<!-- Statistics section -->
-	<section class="bg-purple text-white px-36 py-16 lg:flex lg:flex-col lg:items-center">
+	<section class="bg-purple text-white px-16 xl:px-36 py-16 lg:flex lg:flex-col lg:items-center">
 		<div class="relative flex items-center justify-center w-52 h-52 mx-auto">
 			<div class="absolute inset-0 rounded-full shadow-lg bg-black"></div>
 			<span class="z-10 text-7xl text-white font-extrabold">go!</span>
 			<div class="absolute bg-black bottom-0 right-7 w-10 h-16 rotate-[20deg] rounded-lg border-r-8 border-r-black border-b-8 border-b-black"></div>
 		</div>
-	  <div class="grid grid-cols-2 md:grid-cols-4 gap-10 mt-12 w-full">
-		<div class="flex flex-col items-start px-14 py-8 border border-white rounded-3xl w-full">
-		  <span class="text-7xl font-extrabold mb-6">136</span>
-		  <span class="text-xl">Unique</span>
-		  <span class="text-xl">Colors</span>
+	  <div class="flex flex-col items-center sm:grid sm:grid-cols-2 md:grid-cols-4 gap-10 mt-12 w-full">
+		<div class="flex flex-col items-start px-2 xl:px-14 py-8 border border-white rounded-3xl w-full">
+		  <span class="text-7xl sm:text-5xl xl:text-7xl font-extrabold mb-6">136</span>
+		  <span class="text-xl sm:text-lg xl:text-xl">Unique</span>
+		  <span class="text-xl sm:text-lg xl:text-xl">Colors</span>
 		</div>
-		<div class="flex flex-col items-start px-14 py-8 border border-white rounded-3xl w-full">
-		  <span class="text-7xl font-extrabold mb-6">117</span>
-		  <span class="text-xl">Supers</span>
-		  <span class="text-xl">Professeurs</span>
+		<div class="flex flex-col items-start px-2 xl:px-14 py-8 border border-white rounded-3xl w-full">
+		  <span class="text-7xl sm:text-5xl xl:text-7xl font-extrabold mb-6">117</span>
+		  <span class="text-xl sm:text-lg xl:text-xl">Supers</span>
+		  <span class="text-xl sm:text-lg xl:text-xl">Professeurs</span>
 		</div>
-		<div class="flex flex-col items-start px-14 py-8 border border-white rounded-3xl w-full">
-		  <span class="text-7xl font-extrabold mb-6">734</span>
-		  <span class="text-xl">Etudiants.es</span>
-		  <span class="text-xl">Satisfaits.es</span>
+		<div class="flex flex-col items-start px-2 xl:px-14 py-8 border border-white rounded-3xl w-full">
+		  <span class="text-7xl sm:text-5xl xl:text-7xl font-extrabold mb-6">734</span>
+		  <span class="text-xl sm:text-lg xl:text-xl">Etudiants.es</span>
+		  <span class="text-xl sm:text-lg xl:text-xl">Satisfaits.es</span>
 		</div>
-		<div class="flex flex-col items-start px-14 py-8 border border-white rounded-3xl w-full">
-		  <span class="text-7xl font-extrabold mb-6">346</span>
-		  <span class="text-xl">Diplômes</span>
-		  <span class="text-xl">Obtenus</span>
+		<div class="flex flex-col items-start px-2 xl:px-14 py-8 border border-white rounded-3xl w-full">
+		  <span class="text-7xl sm:text-5xl xl:text-7xl font-extrabold mb-6">346</span>
+		  <span class="text-xl sm:text-lg xl:text-xl">Diplômes</span>
+		  <span class="text-xl sm:text-lg xl:text-xl">Obtenus</span>
 		</div>
 	  </div>
 	</section>
@@ -173,6 +197,8 @@
 		</div>
 	</div>
   </footer>
+  
+  <script src="./main.js"></script>
 
 </body>
 </html>
