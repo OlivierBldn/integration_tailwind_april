@@ -23,15 +23,19 @@
 
 @layer components {
 	.header-fixed {
-		@apply fixed top-0 w-full shadow-md bg-white;
+		@apply fixed top-0 w-full bg-grey;
 	}
 
 	.header-absolute {
-		@apply absolute top-20;
+		@apply absolute top-10;
 	}
 
 	.header-mobile {
-		@apply flex justify-between items-center px-4 py-4 bg-grey shadow-md;
+		@apply fixed flex justify-between items-center px-4 py-4 bg-grey;
+	}
+
+	nav.container {
+		@apply max-w-none;
 	}
 
 	.features-container {
@@ -70,6 +74,18 @@
 @media (min-width: 850px) {
 	#features.features-container {
 		grid-template-columns: 2fr 1fr;
+	}
+}
+
+@media (min-width: 1280px) {
+	.header-absolute {
+		@apply top-20;
+	}
+}
+
+@media (min-width: 1280px) and (max-width: 1680px){
+	h1 {
+		@apply text-5xl !important;
 	}
 }
 

@@ -9,13 +9,13 @@
 <body class="font-jakarta leading-normal tracking-normal w-full">
 
 <!-- Header -->
-<header class="z-50 w-full px-44">
-	<nav class="container mx-auto flex justify-between items-center px-4 py-2">
+<header class="header-absolute z-50 w-full lg:pl-12 lg:px-20 xl:pl-20 xl:pr-28 2xl:pl-40 2xl:pr-48">
+	<nav class="container flex justify-between items-center px-4 py-2">
 	  <!-- Logo for all sizes -->
-	  <a href="#" class="logo text-4xl font-bold inline-block">LearnM5</a>
+	  <a href="#" class="logo lg:text-2xl xl:text-4xl font-bold inline-block">LearnM5</a>
   
 	  <!-- Desktop Navigation Links -->
-	  <div class="hidden lg:flex space-x-8 px-8 bg-grey text-black text-2xl rounded-full">
+	  <div class="hidden lg:flex space-4 2xl:space-x-8 px-8 bg-grey text-black 2xl:text-2xl rounded-full">
 		<a href="#" class="hover:text-blue-500 px-3 py-2">Home</a>
 		<a href="#" class="hover:text-blue-500 px-3 py-2">Features</a>
 		<a href="#" class="hover:text-blue-500 px-3 py-2">Team</a>
@@ -33,9 +33,9 @@
 	  </button>
   
 	  <!-- Mobile Navigation Menu -->
-	  <div class="cross-icon absolute top-0 bg-white hidden lg:hidden">
+	  <div class="cross-icon fixed top-0 left-0 w-full h-screen bg-white hidden lg:hidden z-20 flex flex-col items-center justify-center">
 		<!-- Cross Icon for closing the menu -->
-		<div class="absolute top-5 right-5 z-10">
+		<div class="absolute top-5 right-5 z-30">
 		  <button class="text-black focus:outline-none">
 			<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 			  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 6l12 12m0-12L6 18" />
@@ -43,7 +43,7 @@
 		  </button>
 		</div>
 		<!-- Mobile Navigation Links -->
-		<div class="flex flex-col items-center justify-center min-h-screen absolute bg-white w-screen">
+		<div class="w-full flex flex-col items-center">
 		  <a href="#" class="hover:text-blue-500 text-lg px-3 py-2">Home</a>
 		  <a href="#" class="hover:text-blue-500 text-lg px-3 py-2">Features</a>
 		  <a href="#" class="hover:text-blue-500 text-lg px-3 py-2">Team</a>
@@ -60,13 +60,13 @@
   <!-- Main Content -->
 <main>
 	<!-- Hero section -->
-	<section class="mb-8 bg-purple px-4 xl:px-36 py-16">
-		<div class="md:flex bg-white rounded-3xl">
+	<section class="mb-8 bg-purple px-4 xl:p-16 2xl:px-36 py-8">
+		<div class="lg:flex bg-white rounded-3xl">
 			<div class="lg:w-1/2 p-10">
-				<h1 class="sm:text-lg lg:text-4xl xl:text-7xl font-bold mx-6 xl:my-8 xl:pr-32">Online Spanish Courses</h2>
-				<p class="mx-6 my-3 text-md lg:text-lg xl:pr-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis dolor eget imperdiet velit.</p>
-				<p class="mx-6 my-3 text-md lg:text-lg xl:pr-32">Maecenas lobortis ligula sapien, sed elementum tellus tristique eu. Mauris posuere dolor ut urna pharetra, id efficitur mi semper.</p>
-				<a href="#" class="bg-purple inline-block rounded-xl text-white text-xl font-semibold py-4 px-10 hover:bg-gray-100 transition duration-300 mx-6">Get Started</a>
+				<h1 class="text-4xl mt-6 xl:mt-10 2xl:mt-16 2xl:text-7xl font-bold mx-6 lg:mx-0 xl:mx-6">Online Spanish Courses</h2>
+				<p class="mx-6 lg:mx-0 mt-2 xl:mt-0 xl:mx-6 pt-1 text-md lg:text-lg 2xl:pr-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam quis dolor eget imperdiet velit.</p>
+				<p class="mx-6 lg:mx-0 xl:mx-6 py-2 text-md lg:text-lg 2xl:pr-20">Maecenas lobortis ligula sapien, sed elementum tellus tristique eu. Mauris posuere dolor ut urna pharetra, id efficitur mi semper.</p>
+				<a href="#" class="bg-purple inline-block rounded-xl text-white text-xl font-semibold mt-1 py-3 xl:py-4 px-10 hover:bg-gray-100 transition duration-300 mx-6 lg:mx-0 xl:mx-6">Get Started</a>
 			</div>
 			<div class="lg:w-1/2">
 				<img src="./assets/img/1.jpg" alt="Ma première image"  class="rounded-3xl xl:rounded-l-0">
